@@ -14,11 +14,22 @@
         list-style: decimal;
         color: blue;
     }
+    .boton-ej {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    } 
     </style>
 </head>
 
 <body>
-    <h1 style="color: Blue;(43, 46, 226)">Etiquetas HTML</h1>
+    <h1 style="color:blue">Etiquetas HTML</h1>
     <p>Existen otros tipos de etiqutas para crear una página web en <strong>HTML5</strong> nos permiten encuadrar otros
         elementos dentro de las páginas web. Algunas de las más usadas son:</p>
     <ul>
@@ -38,7 +49,7 @@
             <h3>&lt;address&gt;</h3>
         </li>
         <p>Define la información de contacto del autor/propietario de un documento u artículo.</p><p>Ejemplo:</p> 
-        <address>Escrito por Alfonzo6z</address>
+        <address>Escrito por <a href="https://github.com/Alfonso6z"> Alfonzo6z</a></address>
         <li>
             <h3>&lt;article&gt;</h3>
         </li>
@@ -73,17 +84,71 @@
             <li>
                 <h3>&lt;button&gt;</h3>
             </li>    
-            <p>Define un botón enel que es puede hacer clic.
-                Dentro de un < button > puedes poner texto (y etiquteas como < i >,< b >,< strong >,< img >, etc ). !Eso no es
-                posible con un botón creado con el < input > 
-                Sugerencia:Especifique siembre el type de un < button >, para indicar a los navegadores qué tipo de botón
-                es.
-                Consejo: Puede diseñar botones facilmente con CSS
-                Ejemplo:</p>  
-                <button style="background-color:  aqua;">Boton 1</button> 
-                <button style="background-color:  #008CBA">Boton 2</button>      
-    
+            <p>Define un botón en el que es puede hacer clic.</p>
+                <p> de un < button > puedes poner texto (y etiquteas como < i >,< b >,< strong >,< img >, etc ). !Eso no es
+                posible con un botón creado con el < input > </p>
+                <p><strong>Sugerencia:</strong>Especifique siembre el type de un < button >, para indicar a los navegadores qué tipo de botón
+                es.</p>
+                <p><strong>Consejo: Puede diseñar botones facilmente con CSS</strong></p>
+                <p>Ejemplo:</p>  
+                <button class="boton-ej" style="background-color:  aqua;">Boton 1</button> 
+                <button class="boton-ej"  style="background-color:  #008CBA">Boton 2</button>      
+            <li>
+                <h3>&lt;from&gt;</h3>
+            </li>
+            <p>Es un contenedor para diferentes tipo de elementos de entrada, como: campos de texto, casillas de
+                verificación, botones de opción, botonees de envío, etc</p>
+            <ul>
+                <li style="color: black;list-style:disc">< input type = "text" > <p>Mustra un campo de entrada de texto de una solo linea </p><input type="Hola"></li>
+                <li style="color: black;list-style:disc">< input type = "radio" ></li><p>Muestra un botón de radio(para selecionar una de muchas opciones)</p><input name="e" type="radio">1<input name="e" type="radio">2<input name="e" type="radio">3
+                <li style="color: black;list-style:disc">< input type = "checkbox" ><p>Muestra una casilla de verificación(para selecionar cero o más opciónes)</p></li><input type="checkbox"><input type="checkbox">
+                <li style="color: black;list-style:disc">< input type = "submit" ><p>Muestra un botón de envio(para enviar el formulario)</p></li><input type="submit">
+                <li style="color: black;list-style:disc">< input type = "button" ><p>Muestra un botón en e que sepuede hacer clic</p></li> <input type="button">  
+            </ul>
+            <li>
+                <h3>&lt;footer&gt;</h3>
+            </li>
+            <p>Define un pie de página para un documento o sección</p><p>Normalmente contien:</p>  
+            <ul>
+                <li style="color: black;list-style:disc">Información de autoría</li>
+                <li style="color: black;list-style:disc">Información de registro</li>  
+                <li style="color: black;list-style:disc">Información del contacto</li>  
+                <li style="color: black;list-style:disc">Mapa del sitio</li>  
+                <li style="color: black;list-style:disc">Volver a los enlaces superiores</li>  
+                <li style="color: black;list-style:disc">Documentos relacionados</li>   
+            </ul>
+            <li>
+                <h3>&lt;header&gt;</h3>
+            </li>
+            <p>Representa un contenedor de contenido introductorio o un conjunto de enlaces de navegación.</p>Normalmente contiene:<p><Normalmente contiene:/p>
+            <ul>
+                <li style="color: black;list-style:disc">Uno a más elementos de encabezado (< h1 > - < h6 >) </li>
+                <li style="color: black;list-style:disc">Logotipo o icono</li>  
+                <li style="color: black;list-style:disc">información de autoría <p><strong>NOTA:</strong>:Puede tener varios < header > en un documento HTML. Sin embargo, no sepuede colocar
+                    dentro de un < footer >, < address > u otro < header ></p>
+            </li> </ul> 
+            <p>Ejemplo</p>
+            <h1>Encabezado de la página principal aquí</h1>
+            <p>Publicado el 17/08/2022</p>
+            <li>
+                <h3>&lt;hgroup&gt;</h3>
+            </li>
+            <p>Generalmente se usa para agrupar un conjunto de uno o más elementos < h1 > - < h6 >, para agrupar, por
+                ejemplo, un titulo de sección y un subtitulo adjunto.</p>
+            
+            <li>
+                <h3>&lt;h1&gt;<p> - </p>&lt;h6&gt;</h3>
+            </li>
+            <p>Se utilizan para definir encabezados HTML.Ejemplo</p> 
+            <h1>hola munndo</h1>  
+            <h4 style="color: orangered;"> hola mundo</h4> 
+
+
+
+
+
         <h3></h3>
+
 
 
 
