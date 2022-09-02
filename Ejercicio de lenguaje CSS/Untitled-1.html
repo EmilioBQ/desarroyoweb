@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <style>
+        .grid-container {
+            display: grid;
+        }
+        .grid-item {
+            padding: 20px;
+            font-size: 30px;
+        }
+        .item1 {
+            grid-column: 1/3 ;
+            grid-row: 1 ;
+        }
+        .item2 {
+            grid-column: 1/2;
+            grid-row: 2;
+            text-align: right;
+            margin-left: 50px;
+        }
+        .item3 {
+            grid-column: 2/3; 
+            grid-row: 2 ;
+            margin-left: 8px;
+        }
+        .item4 {
+            grid-column: 2/3;
+            grid-row: 3;
+            margin-left: 8px;
+        }   
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +37,34 @@
     <link rel="stylesheet" href="Gobierno de la Ciudad de México">
 </head>
 <body>
-    <div>
-        <img src="img/logo.svg" alt="" style="width: 20%;"text-decoration-style>
-    </div>
-    <div style="text-align: right;">
-        <nav text-decoration-style>
-            <a href="" style="Color: green; margin-right: 15px;">Residentes</a>
-            <a href="" style="Color: green; margin-right: 15px;">Negocios</a>
-            <a href="" style="Color: green; margin-right: 15px;">Visitantes</a>
-            <a href="" style="Color: green; margin-right: 15px;">Gobierno</a>
-        </nav>
-    </div>
-    <header style="background-image: url(img/hero.jpg)";>
+    <header>
         <div>
-            <img src="img\hero-vector.svg" alt="">
-            <h1>
-                <span style="color: white; 713.72 x 44.27 ;">APRENDE A PROGRAMAR</span>
-                <span style="color: white; 134.66 x 39.2 ;">EN LAS</span >
-                <span style="color: white; 444.41 X 141.38 ;">DE LA CDMX</span>
-                <SPan style="color: white; 444.41 x 39.2">DE LA CDMX</SPan>
-            </h1>
+            <img src="img/logo.svg" alt="" style="width: 20%;"text-decoration-style>
+        </div>
+        <div style="text-align: right;">
+            <nav text-decoration-style>
+                <a href="" style="Color: green; margin-right: 15px;">Residentes</a>
+                <a href="" style="Color: green; margin-right: 15px;">Negocios</a>
+                <a href="" style="Color: green; margin-right: 15px;">Visitantes</a>
+                <a href="" style="Color: green; margin-right: 15px;">Gobierno</a>
+            </nav>
         </div>
     </header>
+        <section style="display: flex; height:338px ; background: url(img/hero.jpg) 100% / cover no-repeat">
+                <!-- vector -->
+                <div>
+                    <img src="img\hero-vector.svg" alt="";>
+                </div>
+                <!--div del grip -->
+                <div>
+                    <h1 class="grid-container">
+                        <span class="item1" style="color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text: indent 30px;">APRENDE A PROGRAMAR</span>
+                        <span class="item2" style="color: white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text: indent 50px;" >EN LAS</span >
+                        <span class="item3" style="color: white; font-family: sans-serif; text: indent 100px;"><strong>ESCUELAS<br>DE CODIGO</strong> </span>
+                        <SPan class="item4" style="color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text: indent 50px;">DE LA CDMX</SPan>
+                    </h1>
+                </div>
+        </section>
     <footer style="text-align: center;"">
         <h3 style="color:#B08F5C;">¿Quién se puede inscribir?</h3>
         <strong style="Color: #646D6C">Cualquier persona que quiera aprender a programar código y cuente con 4-8 horas disponibles a la semana.</strong>
